@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="container">
+        <h1 id="title">
+            E-Tahfizh Survey Form
+        </h1>
+        <hr>
+        <p id="description">
+            Thank you for taking the time to help us improve the features in this application.
+        </p>
+    </header>
+    <form id="survey-form" class="container">
+        <div class="input">
+            <label for="name" id="name-label">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Type your full name" autofocus required>
+        </div>
+
+        <div class="input">
+            <label for="email" id="email-label">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Type your email" required>
+        </div>
+
+        <div class="input">
+            <label for="number" id="number-label">Number:</label> 
+            <input type="number" name="number" id="number" min="9999999999" max="999999999999" placeholder="Type your phone number">    
+        </div>
+
+        <div class="input">
+            <label for="dropdown">How many juz you have memorised</label>
+            <select name="juz" id="dropdown">
+                <option value="a">1-10</option>
+                <option value="b">11-20</option>
+                <option value="c">21-30</option>
+            </select>
+        </div>
+
+        <div id="radio">
+            <p>Gender</p>
+            <div class="input-radio">
+                <label for="male">
+                    <input type="radio" name="gender" id="male" value="male" autofocus> 
+                    Male
+                </label>
+                <label for="female">
+                    <input type="radio" name="gender" id="female" value="female">
+                    Female
+                </label>
+            </div>
+        </div>
+
+        <div class="input">
+            What features do you use often?
+            <div class="input-check">
+                
+                <label>
+                    <input type="checkbox" name="suggestion" value="juzamma">
+                    Read Juz Amma </label>
+    
+                
+                <label>
+                    <input type="checkbox" name="suggestiom" value="memorizing">
+                    Memorizing Qur'an Progress </label>
+    
+                <label> 
+                    <input type="checkbox" name="suggestion" value="prediction">
+                    Khatam Time Prediction</label>
+            </div>
+        </div>
+
+        <div class="input">
+            <label for="suggestion">
+                Your additional suggestion:
+            </label>
+            <textarea placeholder="Type your comment or suggestion" type="textarea" name="suggestion" id="suggestion"></textarea>
+        </div>
+
+        <div class="input">
+            <button type="submit" id="submit" class="submit">
+                Submit
+            </button>
+        </div>
+        
+    </form>
+</body>
+</html>

@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    background-image: url(https://3.bp.blogspot.com/-JFG4IctIiI4/V-QKeEtTNBI/AAAAAAAABMc/x1rLrpQUvNk3mvDGe5v7SQHGn6tzw6SaACLcB/s1600/bg1.jpeg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    background-color: rgb(206, 206, 206);
+    opacity: 80%;
+    margin: 10px 20px auto 20px;
+    padding: 20px;
+    align-self: center;
+    width: 600px;
+    border-radius: 20px;
+}
+
+@media (max-width: 600px){
+    .container {
+        width: 90%;
+    }
+}
+
+header hr {
+    display: flex;
+    border-top: 2px solid black ;
+}
+
+#title {
+    text-align: center;
+}
+
+#description {
+    text-align: center;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 10px auto 10px auto;
+    padding: 10px;
+}
+
+.input input, select {
+    margin-top: 20px;
+
+}
+
+#radio {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.input-radio{
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.input-check {
+    display: flex;
+    flex-direction: column;
+}
+
+#suggestion {
+    margin-top: 10px;
+    height: 100px;
+}
+
+.submit {
+    background-color: #37af65;
+    height:40px;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    border-color: #0f7938;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #267946;
+
+}
